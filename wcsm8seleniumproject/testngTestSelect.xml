@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Suite">
+  <test thread-count="5" parallel="tests" name="Test">
+	  
+	  <parameter name="browser" value="chrome"></parameter>
+	  <parameter name="url" value="http://127.0.0.1/login.do;jsessionid=666e5do44tck3"></parameter>
+	  <parameter name="usn" value="admin"></parameter>
+	  <parameter name="pass" value="manager"></parameter>
+	  <classes>
+		  <class name="testNGSelect.SelectBrowser"></class>
+	  </classes>
+   
+  </test> <!-- Test -->
+  
+  <test thread-count="5" parallel="tests" name="edgetest">
+	  
+	  <parameter name="browser" value="edge"></parameter>
+	  <parameter name="url" value="http://127.0.0.1/login.do;jsessionid=666e5do44tck3"></parameter>
+	  <parameter name="usn" value="admin"></parameter>
+	  <parameter name="pass" value="manager"></parameter>
+	  <classes>
+		  <class name="testNGSelect.SelectBrowser"></class>
+	  </classes>
+   
+	  
+  </test> <!-- Test -->
+  
+</suite> <!-- Suite -->
